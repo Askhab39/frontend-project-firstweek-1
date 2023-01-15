@@ -32,12 +32,12 @@ const CartItem = () => {
   let sum = 0;
   let counter = 0;
 
-  for (let index = 0; index < products.length; index++) {
-    for (let i = 0; i < basket.products.length; i++) {
-      if (products[index]._id === basket.products[i].productId) {
+  for (let index = 0; index < products?.length; index++) {
+    for (let i = 0; i < basket?.products?.length; i++) {
+      if (products[index]?._id === basket?.products[i]?.productId) {
         array.push(products[index]);
-        sum = sum + products[index].price * basket.products[i].amount;
-        counter = counter + products[index].price;
+        sum = sum + products[index]?.price * basket?.products[i].amount;
+        counter = counter + products[index]?.price;
       }
     }
   }
