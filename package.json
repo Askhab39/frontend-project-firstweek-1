@@ -2,6 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://AdamTsurov.github.io/frontend-project-firstweek",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -10,6 +11,7 @@
     "axios": "^1.2.0",
     "bootstrap": "^5.2.3",
     "framer-motion": "^7.6.19",
+    "gh-pages": "^4.0.0",
     "lottie-react": "^2.3.1",
     "moment": "^2.29.4",
     "react": "^18.2.0",
@@ -24,6 +26,8 @@
     "ymaps": "^0.2.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
